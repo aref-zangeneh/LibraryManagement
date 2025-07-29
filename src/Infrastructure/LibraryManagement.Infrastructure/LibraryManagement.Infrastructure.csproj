@@ -19,8 +19,4 @@
     <ProjectReference Include="..\..\Domain\LibraryManagement.Domain\LibraryManagement.Domain\LibraryManagement.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Data\" />
-  </ItemGroup>
-
 </Project>
