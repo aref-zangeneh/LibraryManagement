@@ -4,6 +4,293 @@
     "D:\\WORK_NP\\LibraryManagement\\Tests\\LibraryManagement.Tests\\LibraryManagement.Tests.csproj": {}
   },
   "projects": {
+    "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj",
+        "projectName": "LibraryManagement.Api",
+        "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj",
+        "packagesPath": "C:\\Users\\Aref\\.nuget\\packages\\",
+        "outputPath": "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Aref\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj"
+              },
+              "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj",
+        "projectName": "LibraryManagement.Application",
+        "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\Aref\\.nuget\\packages\\",
+        "outputPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Aref\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj",
+        "projectName": "LibraryManagement.Domain",
+        "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\Aref\\.nuget\\packages\\",
+        "outputPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Aref\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj",
+        "projectName": "LibraryManagement.Infrastructure",
+        "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Aref\\.nuget\\packages\\",
+        "outputPath": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Aref\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj"
+              },
+              "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\WORK_NP\\LibraryManagement\\Tests\\LibraryManagement.Tests\\LibraryManagement.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -31,7 +318,20 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj"
+              },
+              "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj"
+              },
+              "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj"
+              },
+              "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj": {
+                "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "LibraryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LibraryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LibraryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Domain/LibraryManagement.Domain/LibraryManagement.Domain/LibraryManagement.Domain.csproj",
+      "msbuildProject": "../../Domain/LibraryManagement.Domain/LibraryManagement.Domain/LibraryManagement.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "LibraryManagement.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Aref\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+              "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

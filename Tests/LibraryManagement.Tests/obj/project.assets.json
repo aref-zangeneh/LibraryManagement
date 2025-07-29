@@ -8,6 +8,25 @@
           "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
+      "Microsoft.AspNetCore.OpenApi/9.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.17"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.CodeCoverage/17.12.0": {
         "type": "package",
         "compile": {
@@ -39,6 +58,19 @@
         },
         "buildMultiTargeting": {
           "buildMultiTargeting/Microsoft.NET.Test.Sdk.props": {}
+        }
+      },
+      "Microsoft.OpenApi/1.6.17": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.TestPlatform.ObjectModel/17.12.0": {
@@ -411,6 +443,61 @@
         "build": {
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "LibraryManagement.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LibraryManagement.Application": "1.0.0",
+          "LibraryManagement.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.OpenApi": "9.0.1"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagement.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "LibraryManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LibraryManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Application.dll": {}
+        }
+      },
+      "LibraryManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/LibraryManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Domain.dll": {}
+        }
+      },
+      "LibraryManagement.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "LibraryManagement.Application": "1.0.0",
+          "LibraryManagement.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagement.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagement.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -483,6 +570,22 @@
         "coverlet-icon.png",
         "coverlet.collector.6.0.2.nupkg.sha512",
         "coverlet.collector.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.1": {
+      "sha512": "xRJe8UrLnOGs6hOBrT/4r74q97626H0mABb/DV0smlReIx6uQCENAe+TUqF6hD3NtT4sB+qrvWhAej6kxPxgew==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.openapi/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
+        "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
+        "microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
     "Microsoft.CodeCoverage/17.12.0": {
@@ -571,6 +674,21 @@
         "lib/netcoreapp3.1/_._",
         "microsoft.net.test.sdk.17.12.0.nupkg.sha512",
         "microsoft.net.test.sdk.nuspec"
+      ]
+    },
+    "Microsoft.OpenApi/1.6.17": {
+      "sha512": "Le+kehlmrlQfuDFUt1zZ2dVwrhFQtKREdKBo+rexOwaCoYP0/qpgT9tLxCsZjsgR5Itk1UKPcbgO+FyaNid/bA==",
+      "type": "package",
+      "path": "microsoft.openapi/1.6.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/netstandard2.0/Microsoft.OpenApi.dll",
+        "lib/netstandard2.0/Microsoft.OpenApi.pdb",
+        "lib/netstandard2.0/Microsoft.OpenApi.xml",
+        "microsoft.openapi.1.6.17.nupkg.sha512",
+        "microsoft.openapi.nuspec"
       ]
     },
     "Microsoft.TestPlatform.ObjectModel/17.12.0": {
@@ -932,10 +1050,34 @@
         "xunit.runner.visualstudio.2.8.2.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "LibraryManagement.Api/1.0.0": {
+      "type": "project",
+      "path": "../../src/API/LibraryManagement.Api/LibraryManagement.Api.csproj",
+      "msbuildProject": "../../src/API/LibraryManagement.Api/LibraryManagement.Api.csproj"
+    },
+    "LibraryManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../../src/Application/LibraryManagement.Application/LibraryManagement.Application.csproj",
+      "msbuildProject": "../../src/Application/LibraryManagement.Application/LibraryManagement.Application.csproj"
+    },
+    "LibraryManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../src/Domain/LibraryManagement.Domain/LibraryManagement.Domain/LibraryManagement.Domain.csproj",
+      "msbuildProject": "../../src/Domain/LibraryManagement.Domain/LibraryManagement.Domain/LibraryManagement.Domain.csproj"
+    },
+    "LibraryManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../../src/Infrastructure/LibraryManagement.Infrastructure/LibraryManagement.Infrastructure.csproj",
+      "msbuildProject": "../../src/Infrastructure/LibraryManagement.Infrastructure/LibraryManagement.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "LibraryManagement.Api >= 1.0.0",
+      "LibraryManagement.Application >= 1.0.0",
+      "LibraryManagement.Domain >= 1.0.0",
+      "LibraryManagement.Infrastructure >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
       "coverlet.collector >= 6.0.2",
       "xunit >= 2.9.2",
@@ -973,7 +1115,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj": {
+              "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\API\\LibraryManagement.Api\\LibraryManagement.Api.csproj"
+            },
+            "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj": {
+              "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Application\\LibraryManagement.Application\\LibraryManagement.Application.csproj"
+            },
+            "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj": {
+              "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Domain\\LibraryManagement.Domain\\LibraryManagement.Domain\\LibraryManagement.Domain.csproj"
+            },
+            "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj": {
+              "projectPath": "D:\\WORK_NP\\LibraryManagement\\src\\Infrastructure\\LibraryManagement.Infrastructure\\LibraryManagement.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

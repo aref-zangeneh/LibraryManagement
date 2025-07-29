@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\LibraryManagement.Application\LibraryManagement.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\LibraryManagement.Domain\LibraryManagement.Domain\LibraryManagement.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
