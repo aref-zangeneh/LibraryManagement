@@ -1,4 +1,14 @@
 .vs/
-bin
-obj
-.cache
+bin/
+obj/
+*.cache
+logs/
+*.log
+*.db
+*.db-shm
+*.db-wal
+library_management.db
+
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json

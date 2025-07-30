@@ -20,6 +20,8 @@ namespace LibraryManagement.Infrastructure.Data
         {
             modelBuilder.Entity<Book>()
                 .HasKey(b => b.Id);
+
+            modelBuilder.Entity<Book>().ToTable("Books");
         }
     }
 }

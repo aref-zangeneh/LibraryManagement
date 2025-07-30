@@ -17,11 +17,10 @@ namespace LibraryManagement.Infrastructure.Repositories
 
         #region Constructor
 
-        public GenericRepository(LibraryDbContext context,
-            DbSet<TEntity> dbSet)
+        public GenericRepository(LibraryDbContext context)
         {
             _context = context;
-            _dbSet = dbSet;
+            _dbSet = context.Set<TEntity>();
         }
 
         #endregion
