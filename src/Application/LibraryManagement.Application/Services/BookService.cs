@@ -10,6 +10,7 @@ using LibraryManagement.Domain.Entities;
 namespace LibraryManagement.Application.Services;
 public class BookService : IBookService
 {
+
     #region Fields
 
     private readonly IGenericRepository<Book> _bookRepository;
