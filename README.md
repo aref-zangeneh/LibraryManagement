@@ -81,9 +81,6 @@ dotnet test
 ### Database 
 The application uses SQLite by default
 
-
-## Deployment
-
 ### Development
 ```bash
 dotnet run --project src/API/LibraryManagement.Api
